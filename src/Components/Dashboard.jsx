@@ -44,7 +44,7 @@ function Dashboard() {
               <th>JP Code</th>
               <th>Booking Date</th>
               <th>Lead Status Discription</th>
-              <th>Remark</th>
+              <th>Remark Discription</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -54,7 +54,7 @@ function Dashboard() {
                 <tr key={i}>
                   <td>{i + 1}</td>
                   <td>{e.CostomerName}</td>
-                  <td>{e.CostomerNumber}</td>
+                  <td onClick={()=>{window.open(`tel:${e.CostomerNumber}`)}}>{e.CostomerNumber}</td>
                   <td>{e.JPCode}</td>
                   <td>{e.BookingDate}</td>
                   <td>{e.LeadStatus}</td>
