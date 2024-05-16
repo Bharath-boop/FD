@@ -142,20 +142,15 @@ function Edit() {
             </Form.Select>
 
             <Form.Label>Status</Form.Label>
-            <Form.Select
+            <Form.Control
               name="Status"
               value={status}
               onChange={(e) => {
                 setStatus(e.target.value);
               }}
               required
-            >
-              <option value="">Choose the option</option>
-              <option value="Inproess">Inproess</option>
-              <option value="Cancel">Cancel</option>
-              <option value="Completed">Completed</option>
-              <option value="Hold">Hold</option>
-            </Form.Select>
+            />
+             
 
             <div className="field mt-5">
               <input type="submit" />

@@ -90,13 +90,13 @@ function Create() {
             </Form.Select>
 
             <Form.Label>Status</Form.Label>
-            <Form.Select name="Status" required>
-              <option value="">Choose the option</option>
-              <option value="Inproess">Inproess</option>
-              <option value="Cancel">Cancel</option>
-              <option value="Completed">Completed</option>
-              <option value="Hold">Hold</option>
-            </Form.Select>
+            <Form.Control
+                type="text"
+                placeholder="Remark"
+                name="Status"
+                required
+              />
+            
 
             <div className="field mt-5">
               <input type="submit" />
