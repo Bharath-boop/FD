@@ -13,7 +13,7 @@ function Create() {
       e.preventDefault();
       const formData = new FormData(e.target);
       const formProps = Object.fromEntries(formData);
-      let res = await axios.post(`${BASE_URL.BASE_URL}/user/create`, formProps);
+      let res = await axios.post(`${BASE_URL.BASE_URL}/create`, formProps);
       if (res.status === 201) {
         toast.success(res.data.message);
         navigate("/dashboard");

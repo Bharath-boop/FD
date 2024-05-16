@@ -21,7 +21,7 @@ function Edit() {
       const formData = new FormData(e.target);
       const formProps = Object.fromEntries(formData);
       console.log(formProps);
-      let res = await axios.put(`${BASE_URL.BASE_URL}/user/edit/${id}`, formProps);
+      let res = await axios.put(`${BASE_URL.BASE_URL}/edit/${id}`, formProps);
       console.log(res);
       if(res.status===200){
         navigate('/dashboard')

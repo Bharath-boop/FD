@@ -12,7 +12,7 @@ function Dashboard() {
 
   const getData = async () => {
     try {
-      let res = await axios.get(`${BASE_URL.BASE_URL}/user`);
+      let res = await axios.get(`${BASE_URL.BASE_URL}`);
       setData(res.data.user.slice(1, res.data.user.length));
     } catch (error) {
       toast.error(error.response.data.message || error.message);
