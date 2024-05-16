@@ -12,7 +12,7 @@ function Signin() {
       const formData = new FormData(e.target);
       const formProps = Object.fromEntries(formData);
       console.log(BASE_URL.BASE_URL);
-      let res = await axios.post(`${BASE_URL.BASE_URL}/login`, formProps);
+      let res = await axios.post(`${BASE_URL.BASE_URL}/user/login`, formProps);
       console.log(res);
       if (res.status === 200) {
         toast.success(res.data.message);
