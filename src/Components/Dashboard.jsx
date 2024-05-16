@@ -44,7 +44,7 @@ function Dashboard() {
               <th>JP Code</th>
               <th>Booking Date</th>
               <th>Lead Status Discription</th>
-              <th>Status</th>
+              <th>Remark</th>
               <th>Action</th>
             </tr>
           </thead>
