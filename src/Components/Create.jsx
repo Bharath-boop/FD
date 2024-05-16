@@ -89,7 +89,7 @@ function Create() {
               <option value="Completed">Completed</option>
             </Form.Select>
 
-            <Form.Label>Status</Form.Label>
+            <Form.Label>Remark</Form.Label>
             <Form.Control
                 type="text"
                 placeholder="Remark"
